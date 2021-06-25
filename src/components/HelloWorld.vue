@@ -43,6 +43,8 @@
 </template>
 
 <script>
+  import '../styles/overwrite.sass'
+
   export default {
 
   }
