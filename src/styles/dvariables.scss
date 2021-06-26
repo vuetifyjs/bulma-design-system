@@ -47,49 +47,49 @@ $heading-font-family: $body-font-family;
 
 $typography: (
   'h1': (
-    'size': 6rem,
-    'weight': 300,
-    'line-height': 6rem,
+    'size': 2.5rem,
+    'weight': 500,
+    'line-height': 1.2,
     'letter-spacing': -.015625em,
     'font-family': $heading-font-family,
     'text-transform': false
   ),
   'h2': (
-    'size': 3.75rem,
-    'weight': 300,
-    'line-height': 3.75rem,
+    'size': 2rem,
+    'weight': 500,
+    'line-height': 1.2,
     'letter-spacing': -.0083333333em,
     'font-family': $heading-font-family,
     'text-transform': false
   ),
   'h3': (
-    'size': 3rem,
-    'weight': 400,
-    'line-height': 3.125rem,
+    'size': 1.75rem,
+    'weight': 500,
+    'line-height': 1.2,
     'letter-spacing': normal,
     'font-family': $heading-font-family,
     'text-transform': false
   ),
   'h4': (
-    'size': 2.125rem,
-    'weight': 400,
-    'line-height': 2.5rem,
+    'size': 1.5rem,
+    'weight': 500,
+    'line-height': 1.2,
     'letter-spacing': .0073529412em,
     'font-family': $heading-font-family,
     'text-transform': false
   ),
   'h5': (
-    'size': 1.5rem,
-    'weight': 400,
-    'line-height': 2rem,
+    'size': 1.25rem,
+    'weight': 500,
+    'line-height': 1.2,
     'letter-spacing': normal,
     'font-family': $heading-font-family,
     'text-transform': false
   ),
   'h6': (
-    'size': 1.25rem,
+    'size': 1rem,
     'weight': 500,
-    'line-height': 2rem,
+    'line-height': 1.2,
     'letter-spacing': .0125em,
     'font-family': $heading-font-family,
     'text-transform': false
@@ -97,7 +97,7 @@ $typography: (
   'subtitle-1': (
     'size': 1rem,
     'weight': normal,
-    'line-height': 1.75rem,
+    'line-height': 1.2,
     'letter-spacing': .009375em,
     'font-family': $body-font-family,
     'text-transform': false
@@ -129,6 +129,7 @@ $typography: (
   'button': (
     'size': .875rem,
     'weight': 500,
+    'border-radius': .25rem,
     'line-height': 2.25rem,
     'letter-spacing': .0892857143em,
     'font-family': $body-font-family,

@@ -20,12 +20,16 @@ export default createVuetify({
         colors: {
           background: '#FFFFFF',
           surface: '#FFFFFF',
-          primary: '#0062cc',
-          'primary-darken-1': '#3700B3',
+          primary: '#006efd',
+          'primary-darken-1': '#3b5cff',
+          'primary-darken-2': '#0227e4',
+          'primary-darken-3': '#0221c8',
+          'primary-darken-4': '#001eab',
+          'primary-darken-5': '#00188f',
           secondary: '#6c757d',
           'secondary-darken-1': '#018786',
-          error: '#dc3545',
-          info: '#17a2b8',
+          error: '#dd3748',
+          info: '#0dccf2',
           success: '#28a745',
           warning: '#ffc107',
         },
@@ -33,7 +37,7 @@ export default createVuetify({
           'border-color': '#000000',
           'border-opacity': 0.12,
           'high-emphasis-opacity': 0.87,
-          'medium-emphasis-opacity': 0.60,
+          'medium-emphasis-opacity': 0.6,
           'disabled-opacity': 0.38,
           'activated-opacity': 0.12,
           'hover-opacity': 0.04,
@@ -64,7 +68,7 @@ export default createVuetify({
           'border-color': '#FFFFFF',
           'border-opacity': 0.12,
           'high-emphasis-opacity': 0.87,
-          'medium-emphasis-opacity': 0.60,
+          'medium-emphasis-opacity': 0.6,
           'disabled-opacity': 0.38,
           'activated-opacity': 0.12,
           'hover-opacity': 0.04,
@@ -77,6 +81,6 @@ export default createVuetify({
           'code-background-color': '#B7B7B7',
         },
       },
-    }
-  }
-})
+    },
+  },
+});

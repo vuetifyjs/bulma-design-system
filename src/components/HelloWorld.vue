@@ -39,6 +39,20 @@
         <v-btn variant="outlined" class="mr-2">Dark</v-btn>
       </v-theme-provider>
     </div>
+
+    <div class="ma-12 pa-12">
+      <p class="text-h1">h1. Bootstrap heading</p>
+      
+      <p class=text-h2>h2. Bootstrap heading</p>
+
+      <p class="text-h3">h3. Bootstrap heading</p>
+      
+      <p class="text-h4">h4. Bootstrap heading</p>
+
+      <p class="text-h5">h5. Bootstrap heading</p>
+
+      <p class="text-h6">h6. Bootstrap heading</p>
+    </div>
   </v-app>
 </template>
 
