@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-import path from "path";
-const srcPath = path.resolve(__dirname, "./src");
+import path from 'path'
+const srcPath = path.resolve(__dirname, 'src', 'styles', 'variables.scss')
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,8 +10,8 @@ export default defineConfig({
   define: { 'process.env': {} },
   css: {
     preprocessorOptions: {
-      sass: { additionalData: `@import "${srcPath}/styles/variables.scss"\n` },
-      scss: { additionalData: `@import "${srcPath}/styles/variables.scss";\n` },
+      sass: { additionalData: `@import ${srcPath}\n` },
+      scss: { additionalData: `@import ${srcPath};\n` },
     },
   },
   /* remove the need to specify .vue files https://vitejs.dev/config/#resolve-extensions

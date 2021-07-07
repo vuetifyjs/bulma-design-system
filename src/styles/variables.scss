@@ -6,3 +6,23 @@ $button-padding-ratio: 2.5;
 $button-font-weight: 400;
 $button-line-height: 1.5;
 $button-background: #f8f9fa;
+
+// Alerts
+$alert-border-thin-width: thin !default;
+$alert-border-width: thin !default;
+
+// Buttons
+$button-card-actions-margin: 0;
+$button-padding-ratio: 3;
+$button-height: 38px;
+$button-font-size: 1rem;
+
+// Cards
+$card-text-opacity: 1;
+$card-text-font-size: $font-size-root;
+$card-text-padding: 20px;
+$card-actions-padding: 0 20px 20px;
+
+// Footers
+$footer-color: #6c757d;
+$footer-padding: 0;

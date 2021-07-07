@@ -13,10 +13,10 @@
     "core-js": "^3.6.5",
     "roboto-fontface": "*",
     "vue": "^3.0.0",
-    "vuetify": "3.0.0-alpha.7"
+    "vuetify": "3.0.0-alpha.8"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.1.5",
+    "@vitejs/plugin-vue": "^1.2.4",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
@@ -26,8 +26,9 @@
     "eslint-plugin-vue": "^7.0.0",
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
-    "vite": "~2.0.5",
-    "vue-cli-plugin-vuetify": "~2.4.1"
+    "vite": "~2.4.1",
+    "vue-cli-plugin-vuetify": "~2.4.1",
+    "webfontloader": "^1.6.28"
   },
   "eslintConfig": {
     "root": true,

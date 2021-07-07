@@ -1,9 +1,20 @@
-$body-font-family: 'Roboto', sans-serif;
+$body-font-family:  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-size-root: 16px;
 $line-height-root: 1.5;
 $border-color-root: rgba(var(--v-border-color), var(--v-border-opacity));
 $border-radius-root: 4px;
 $border-style-root: solid;
+
+// Spacers
+$spacer: 16px;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
 
 $borders: (
   0: 0,
@@ -21,6 +32,31 @@ $border-opacities: (
   50: .50,
   75: .75,
   100: 1
+);
+
+$grid-breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+);
+
+$container-max-widths: (
+  'md': 720px,
+  'lg': 960px,
+  'xl': 1140px,
+  'xxl': 1320px,
+);
+
+$font-weights: (
+  'thin': lighter,
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+  'black': bolder,
 );
 
 $states: (
@@ -50,7 +86,7 @@ $typography: (
     'size': 2.5rem,
     'weight': 500,
     'line-height': 1.2,
-    'letter-spacing': -.015625em,
+    'letter-spacing': normal,
     'font-family': $heading-font-family,
     'text-transform': false
   ),
@@ -58,7 +94,7 @@ $typography: (
     'size': 2rem,
     'weight': 500,
     'line-height': 1.2,
-    'letter-spacing': -.0083333333em,
+    'letter-spacing': normal,
     'font-family': $heading-font-family,
     'text-transform': false
   ),
@@ -74,7 +110,7 @@ $typography: (
     'size': 1.5rem,
     'weight': 500,
     'line-height': 1.2,
-    'letter-spacing': .0073529412em,
+    'letter-spacing': normal,
     'font-family': $heading-font-family,
     'text-transform': false
   ),
@@ -90,7 +126,7 @@ $typography: (
     'size': 1rem,
     'weight': 500,
     'line-height': 1.2,
-    'letter-spacing': .0125em,
+    'letter-spacing': normal,
     'font-family': $heading-font-family,
     'text-transform': false
   ),
@@ -98,7 +134,7 @@ $typography: (
     'size': 1rem,
     'weight': normal,
     'line-height': 1.2,
-    'letter-spacing': .009375em,
+    'letter-spacing': normal,
     'font-family': $body-font-family,
     'text-transform': false
   ),
@@ -106,23 +142,23 @@ $typography: (
     'size': .875rem,
     'weight': 500,
     'line-height': 1.375rem,
-    'letter-spacing': .0071428571em,
+    'letter-spacing': normal,
     'font-family': $body-font-family,
     'text-transform': false
   ),
   'body-1': (
     'size': 1rem,
     'weight': 400,
-    'line-height': 1.5rem,
-    'letter-spacing': .03125em,
+    'line-height': 1.5,
+    'letter-spacing': normal,
     'font-family': $body-font-family,
     'text-transform': false
   ),
   'body-2': (
     'size': .875rem,
     'weight': 400,
-    'line-height': 1.25rem,
-    'letter-spacing': .0178571429em,
+    'line-height': 1.5,
+    'letter-spacing': normal,
     'font-family': $body-font-family,
     'text-transform': false
   ),
@@ -131,15 +167,15 @@ $typography: (
     'weight': 500,
     'border-radius': .25rem,
     'line-height': 2.25rem,
-    'letter-spacing': .0892857143em,
+    'letter-spacing': normal,
     'font-family': $body-font-family,
     'text-transform': uppercase
   ),
   'caption': (
     'size': .75rem,
     'weight': 400,
-    'line-height': 1.25rem,
-    'letter-spacing': .0333333333em,
+    'line-height': 1.5,
+    'letter-spacing': normal,
     'font-family': $body-font-family,
     'text-transform': false
   ),
@@ -147,7 +183,7 @@ $typography: (
     'size': .75rem,
     'weight': 500,
     'line-height': 2rem,
-    'letter-spacing': .1666666667em,
+    'letter-spacing': normal,
     'font-family': $body-font-family,
     'text-transform': uppercase
   )
@@ -158,5 +194,5 @@ $decelerated-easing: cubic-bezier(0.0, 0, 0.2, 1); // Entering
 $accelerated-easing: cubic-bezier(0.4, 0, 1, 1); // Leaving
 
 // Elements
-$blockquote-font-size: 18px;
+$blockquote-font-size: $font-size-root * 1.25;
 $blockquote-font-weight: 300;

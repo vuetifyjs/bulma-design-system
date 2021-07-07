@@ -7,11 +7,38 @@ import * as directives from 'vuetify/lib/directives'
 export default createVuetify({
   components,
   directives,
+  display: {
+    thresholds: {
+      xs: 0,
+      sm: 576,
+      md: 768,
+      lg: 992,
+      xl: 1200,
+      xxl: 1400,
+    },
+  },
   defaults: {
     // VBtn: {
     //   color: '#5A6268',
     //   flat: true,
     // }
+    VAppBar: {
+      flat: true,
+      density: 'comfortable',
+    },
+    VAlert: {
+      border: true,
+      variant: 'contained-text',
+    },
+    VCard: {
+      border: true,
+      flat: true,
+    },
+  },
+  icons: {
+    aliases: {
+      info: 'mdi-information-variant'
+    }
   },
   theme: {
     themes: {
@@ -20,24 +47,24 @@ export default createVuetify({
         colors: {
           background: '#FFFFFF',
           surface: '#FFFFFF',
-          primary: '#006efd',
+          primary: '#0D6EFD',
           'primary-darken-1': '#3b5cff',
           'primary-darken-2': '#0227e4',
           'primary-darken-3': '#0221c8',
           'primary-darken-4': '#001eab',
           'primary-darken-5': '#00188f',
-          secondary: '#6c757d',
+          secondary: '#6C757D',
           'secondary-darken-1': '#018786',
-          error: '#dd3748',
-          info: '#0dccf2',
-          success: '#28a745',
-          warning: '#ffc107',
+          error: '#DC3545',
+          info: '#0DCAF0',
+          success: '#198754',
+          warning: '#FFC107',
         },
         variables: {
           'border-color': '#000000',
           'border-opacity': 0.12,
           'high-emphasis-opacity': 0.87,
-          'medium-emphasis-opacity': 0.6,
+          'medium-emphasis-opacity': 0.7,
           'disabled-opacity': 0.38,
           'activated-opacity': 0.12,
           'hover-opacity': 0.04,
