@@ -1,4 +1,4 @@
-# boostrap-design-system
+# bulma-design-system
 
 ## Project setup
 ```
