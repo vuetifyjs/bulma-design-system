@@ -3,14 +3,16 @@
     <v-app-bar color="#343A40" class="text-white">
       <v-container class="py-0 d-flex">
         <div class="text-h5 mb-0 d-flex align-center">
-          <v-icon class="mr-2" icon="mdi-camera-outline"></v-icon>
+          <v-icon class="mr-2" icon="mdi-draw"></v-icon>
 
           Album
         </div>
 
         <v-spacer></v-spacer>
 
-        <v-btn icon="mdi-menu" border density="comfortable" rounded="md" min-width="56" height="40">
+        <v-btn size="large" class="text-white" color="primary">
+          <v-icon class="mr-2">mdi-download</v-icon>
+          Get Vuetify 3.0
         </v-btn>
       </v-container>
     </v-app-bar>
@@ -20,16 +22,16 @@
 
       <v-container class="text-center py-16">
         <section>
-          <h1 class="text-h1 font-weight-thin mb-2">Album example</h1>
+          <h1 class="text-h1 mb-2">Album example</h1>
 
-          <v-responsive class="text-medium-emphasis text-h5 mx-auto font-weight-thin" max-width="610">
+          <v-responsive class="text-medium-emphasis text-h5 mx-auto" max-width="610">
             Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.
           </v-responsive>
 
           <div class="mt-4">
-            <v-btn class="mr-1" color="primary">Main call to action</v-btn>
+            <v-btn class="mr-3 text-white" size="large" color="primary">Main call to action</v-btn>
 
-            <v-btn class="ml-1" color="secondary">Secondary action</v-btn>
+            <v-btn class="ml-3" size="large" color="secondary">Secondary action</v-btn>
           </div>
         </section>
       </v-container>
@@ -48,8 +50,8 @@
               </v-card-text>
 
               <template #actions>
-                  <v-btn variant="outlined" size="small">View</v-btn>
-                  <v-btn variant="outlined" size="small">Edit</v-btn>
+                  <v-btn class="mr-1 text-white" color="primary-darken-1">View</v-btn>
+                  <v-btn class="ml-1" variant="outlined" color="info">Edit</v-btn>
 
                   <v-spacer></v-spacer>
 
@@ -64,13 +66,13 @@
     <v-footer>
       <v-container>
         <p>
-          Album example is © Bootstrap, but please download and customize it for yourself!
+          © Vuetify
 
           <a href="#" class="float-right">Back to top</a>
         </p>
 
         <p>
-          New to Bootstrap? Visit the homepage or read our getting started guide.
+          Read our documentation to get started with creating your Vue apps with Vuetify.
         </p>
 
       </v-container>

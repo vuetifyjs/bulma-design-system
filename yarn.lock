@@ -8456,10 +8456,10 @@ vue@^3.0.0:
     "@vue/runtime-dom" "3.1.2"
     "@vue/shared" "3.1.2"
 
-vuetify@3.0.0-alpha.8:
-  version "3.0.0-alpha.8"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.0.0-alpha.8.tgz#2598aaaa985c41d1f5ab3c965ce6348f01c7505b"
-  integrity sha512-PeD5u0NECeN3KOBm0xItuH2MgeLVIZac9X79LbUhaTAO5T64f/kJztWHC8KUyKVliUESXt6XQDTrPb4GLqTWtQ==
+vuetify@^3.0.0-alpha.9:
+  version "3.0.0-alpha.9"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-3.0.0-alpha.9.tgz#e0e91152568b3da260e62e90775346a4facb0da5"
+  integrity sha512-F8xwdAp65gUY0kf0lGKMKhYZDAA2j6cqLEc63uqIOq/dZ8R2k3ZSfBMGtt+jOMCt/w28BZ7rx7AuLxPA5oF/pA==
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"

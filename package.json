@@ -1,5 +1,5 @@
 {
-  "name": "boostrap-design-system",
+  "name": "bulma-design-system",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "core-js": "^3.6.5",
     "roboto-fontface": "*",
     "vue": "^3.0.0",
-    "vuetify": "3.0.0-alpha.8"
+    "vuetify": "^3.0.0-alpha.9"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.4",
