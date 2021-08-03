@@ -17,3 +17,15 @@
 
   .v-btn:not(:last-child)
     border-right: 1px solid rgba(var(--v-border-color), var(--v-border-opacity))
+
+.v-alert .v-alert__close > .v-btn
+  border-radius: 50%
+  background: rgba(0, 0, 0, 0.25)
+  padding: 2px
+
+  &:hover
+    background: rgba(0, 0, 0, 0.5)
+
+  & > .v-icon
+    color: white
+    font-size: 16px
