@@ -71,11 +71,13 @@
               </template>
               <v-card-text>
                 This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                <div class="text-grey-lighten-1">Posted: 11:03 03.08.2021</div>
               </v-card-text>
 
               <template #actions>
-                <v-btn text size="x-large" :rounded="0">Asd</v-btn>
-                <v-btn text size="x-large" :rounded="0">Asd</v-btn>
+                <v-btn text size="x-large" :rounded="0">Like</v-btn>
+                <v-btn text size="x-large" :rounded="0">Comment</v-btn>
+                <v-btn text size="x-large" :rounded="0">Repost</v-btn>
               </template>
             </v-card>
           </v-col>
