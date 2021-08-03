@@ -1,16 +1,22 @@
 <template>
   <v-app>
-    <v-app-bar color="#343A40" class="text-white">
+    <v-app-bar>
       <v-container class="py-0 d-flex">
-        <div class="text-h5 mb-0 d-flex align-center">
+        <v-app-bar-title>
           <v-icon class="mr-2" icon="mdi-draw"></v-icon>
 
           Album
-        </div>
+        </v-app-bar-title>
+
+        <v-btn size="large" text>Docs</v-btn>
+
+        <v-btn size="large" text>Quick start</v-btn>
+
+        <v-btn size="large" text>Code</v-btn>
 
         <v-spacer></v-spacer>
 
-        <v-btn size="large" class="text-white" color="primary">
+        <v-btn class="text-white" color="primary">
           <v-icon class="mr-2">mdi-download</v-icon>
           Get Vuetify 3.0
         </v-btn>
@@ -39,8 +45,26 @@
       <div class="bg-grey-lighten-4">
 
       <v-container>
-        <v-row dense>
-          <v-col cols="12" md="4" v-for="n in 9" :key="n">
+        <v-row dense justify="center">
+          <v-col cols="6">
+            <v-alert
+              border="left"
+              icon="mdi-account"
+              variant="outlined"
+              prominent
+              color="error"
+            >Attention!</v-alert>
+          </v-col>
+        </v-row>
+
+        <v-row dense justify="center">
+          <v-col cols="6">
+            <v-breadcrumbs :items="breadcrumbs"></v-breadcrumbs>
+          </v-col>
+        </v-row>
+
+        <v-row dense justify="center">
+          <v-col cols="6">
             <v-card>
               <template #media>
                 <v-img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"></v-img>
@@ -50,18 +74,22 @@
               </v-card-text>
 
               <template #actions>
-                  <v-btn class="mr-1 text-white" color="primary-darken-1">View</v-btn>
-                  <v-btn class="ml-1" variant="outlined" color="info">Edit</v-btn>
-
-                  <v-spacer></v-spacer>
-
-                  <span class="text-body-2 text-medium-emphasis">9 mins</span>
+                <v-btn text size="x-large" :rounded="0">Asd</v-btn>
+                <v-btn text size="x-large" :rounded="0">Asd</v-btn>
               </template>
             </v-card>
           </v-col>
         </v-row>
+
+        <v-pagination
+          v-model="page"
+          prev-icon=""
+          next-icon=""
+          color="primary"
+          :length="60"
+        ></v-pagination>
       </v-container>
-      </div>
+    </div>
 
     <v-footer>
       <v-container>
@@ -92,7 +120,21 @@ export default {
   },
 
   data: () => ({
-    //
+    page: 30,
+    breadcrumbs: [
+      {
+        text: 'Dashboard',
+        href: 'breadcrumbs_dashboard',
+      },
+      {
+        text: 'Link 1',
+        href: 'breadcrumbs_link_1',
+      },
+      {
+        text: 'Link 2',
+        href: 'breadcrumbs_link_2',
+      },
+    ],
   }),
 }
 </script>

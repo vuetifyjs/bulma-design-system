@@ -6,3 +6,14 @@
 .v-btn
   font-size: 1rem
   padding: .5rem .5rem
+
+.v-card > .v-card-actions
+  padding: 0
+  border-top: 1px solid rgba(var(--v-border-color), var(--v-border-opacity))
+
+  .v-btn
+    flex-grow: 1
+    color: rgb(var(--v-theme-info))
+
+  .v-btn:not(:last-child)
+    border-right: 1px solid rgba(var(--v-border-color), var(--v-border-opacity))
